@@ -1,0 +1,83 @@
+body{
+background-color: #f2f2f2;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+margin: 0;
+padding: 0;
+}
+.main-content {
+    margin-left: 40px; /* ou la valeur de votre choix */
+  }
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  label {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  input[type="email"] {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.2em;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+  }
+  
+  button[type="submit"] {
+    background-color: #ffc107;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #000000;
+    transform: scale(1.05);
+  }
+
+  .main-content {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  /* Rendre le site réactif */
+  @media screen and (max-width: 768px) {
+    /* Changer la taille de police de la barre de navigation pour les petits écrans */
+    .navbar-nav > li > a {
+      font-size: 1rem;
+    }
+    
+    /* Centrer le texte de la barre de navigation pour les petits écrans */
+    .navbar-nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    
+    /* Réduire la taille de police des titres sur les petits écrans */
+    h2, h3{
+      font-size: 1.2rem;
+    }
+    
+    /* Réduire la taille de police du corps de texte sur les petits écrans */
+    p, ul, ol {
+      font-size: 0.9rem;
+    }
+  }
+    
